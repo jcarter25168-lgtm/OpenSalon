@@ -1,0 +1,17 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "opensalon",
+  "main": "src/server/index.ts", // Verify the exact Hono entry file path in your repo's src/ folder
+  "compatibility_date": "2026-01-01",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "opensalon-db",
+      "database_id": "da727dfc-afce-4bba-a16a-2c26416fe6b7"
+    }
+  ]
+}
